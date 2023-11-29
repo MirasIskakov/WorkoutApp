@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D85145202B17A5880028C903 /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D851451F2B17A5880028C903 /* BaseController.swift */; };
+		D85145222B17A8030028C903 /* UIView + ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85145212B17A8030028C903 /* UIView + ext.swift */; };
 		D8E3F5512B09346E00F05F56 /* NavBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E3F5502B09346E00F05F56 /* NavBarController.swift */; };
 		D8F402B42AF7C7C7003256A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F402B32AF7C7C7003256A9 /* AppDelegate.swift */; };
 		D8F402B62AF7C7C7003256A9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F402B52AF7C7C7003256A9 /* SceneDelegate.swift */; };
-		D8F402B82AF7C7C7003256A9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F402B72AF7C7C7003256A9 /* ViewController.swift */; };
+		D8F402B82AF7C7C7003256A9 /* OverviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F402B72AF7C7C7003256A9 /* OverviewController.swift */; };
 		D8F402BD2AF7C7C8003256A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8F402BC2AF7C7C8003256A9 /* Assets.xcassets */; };
 		D8F402C02AF7C7C8003256A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8F402BE2AF7C7C8003256A9 /* LaunchScreen.storyboard */; };
 		D8F402CA2AF7D1DF003256A9 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F402C92AF7D1DF003256A9 /* TabBarController.swift */; };
@@ -19,11 +21,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D851451F2B17A5880028C903 /* BaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
+		D85145212B17A8030028C903 /* UIView + ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + ext.swift"; sourceTree = "<group>"; };
 		D8E3F5502B09346E00F05F56 /* NavBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarController.swift; sourceTree = "<group>"; };
 		D8F402B02AF7C7C7003256A9 /* WorkoutApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorkoutApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8F402B32AF7C7C7003256A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D8F402B52AF7C7C7003256A9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D8F402B72AF7C7C7003256A9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D8F402B72AF7C7C7003256A9 /* OverviewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewController.swift; sourceTree = "<group>"; };
 		D8F402BC2AF7C7C8003256A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D8F402BF2AF7C7C8003256A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D8F402C12AF7C7C8003256A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -43,6 +47,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D851451D2B17A53A0028C903 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D8F402C92AF7D1DF003256A9 /* TabBarController.swift */,
+				D8E3F5502B09346E00F05F56 /* NavBarController.swift */,
+				D851451F2B17A5880028C903 /* BaseController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		D8F402A72AF7C7C7003256A9 = {
 			isa = PBXGroup;
 			children = (
@@ -64,9 +78,8 @@
 			children = (
 				D8F402CB2AF7D3BC003256A9 /* Helpers */,
 				D8F402C72AF7CA1D003256A9 /* Application */,
-				D8F402B72AF7C7C7003256A9 /* ViewController.swift */,
-				D8F402C92AF7D1DF003256A9 /* TabBarController.swift */,
-				D8E3F5502B09346E00F05F56 /* NavBarController.swift */,
+				D8F402B72AF7C7C7003256A9 /* OverviewController.swift */,
+				D851451D2B17A53A0028C903 /* Controller */,
 				D8F402C82AF7CDBF003256A9 /* SupportingFiles */,
 			);
 			path = WorkoutApp;
@@ -104,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				D8F402CC2AF7D3E5003256A9 /* UIColor + ext.swift */,
+				D85145212B17A8030028C903 /* UIView + ext.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -178,12 +192,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8F402B82AF7C7C7003256A9 /* ViewController.swift in Sources */,
+				D8F402B82AF7C7C7003256A9 /* OverviewController.swift in Sources */,
+				D85145222B17A8030028C903 /* UIView + ext.swift in Sources */,
 				D8F402CA2AF7D1DF003256A9 /* TabBarController.swift in Sources */,
 				D8F402B42AF7C7C7003256A9 /* AppDelegate.swift in Sources */,
 				D8E3F5512B09346E00F05F56 /* NavBarController.swift in Sources */,
 				D8F402D12AF7D5AC003256A9 /* Resources.swift in Sources */,
 				D8F402CD2AF7D3E5003256A9 /* UIColor + ext.swift in Sources */,
+				D85145202B17A5880028C903 /* BaseController.swift in Sources */,
 				D8F402B62AF7C7C7003256A9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
