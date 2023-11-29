@@ -13,7 +13,7 @@ enum Resources {
         static var inActive = UIColor(hexString: "#929DA5")
         
         static var separator = UIColor(hexString: "#E8ECEF")
-        static var titleGrey = UIColor(hexString: "#545C77")
+        static var titleGray = UIColor(hexString: "#545C77")
     }
     
     enum Strings {

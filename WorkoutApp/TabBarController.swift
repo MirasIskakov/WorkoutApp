@@ -40,10 +40,10 @@ final class TabBarController: UITabBarController {
         let progressController = UIViewController()
         let settingsController = UIViewController()
         
-        let overviewNavigation = UINavigationController(rootViewController: overviewController)
-        let sessionNavigation = UINavigationController(rootViewController: sessionController)
-        let progressNavigation = UINavigationController(rootViewController: progressController)
-        let settingsNavigation = UINavigationController(rootViewController: settingsController)
+        let overviewNavigation = NavBarController(rootViewController: overviewController)
+        let sessionNavigation = NavBarController(rootViewController: sessionController)
+        let progressNavigation = NavBarController(rootViewController: progressController)
+        let settingsNavigation = NavBarController(rootViewController: settingsController)
         
         overviewNavigation.tabBarItem = UITabBarItem(title: Resources.Strings.TebBar.overview,
                                                      image: Resources.Images.TebBar.overview,
