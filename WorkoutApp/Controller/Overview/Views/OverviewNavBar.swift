@@ -18,7 +18,7 @@ final class OverviewNavBar: BaseView {
     override func layoutSubviews() {
         super.layoutSubviews()
         
-        addBottenBorder(with: Resources.Color.separator, height: 1)
+        addBottenBorder(with: R.Color.separator, height: 1)
 
     }
 
@@ -32,8 +32,8 @@ final class OverviewNavBar: BaseView {
 }
 
 extension OverviewNavBar {
-    override func addViews() {
-        super.addViews()
+    override func setupViews() {
+        super.setupViews()
         
         addView(titleLabel)
         addView(allWorkoutsButton)
@@ -41,8 +41,8 @@ extension OverviewNavBar {
         addView(weekView)
     }
     
-    override func layoutViews() {
-        super.layoutViews()
+    override func constraintViews() {
+        super.constraintViews()
         
         NSLayoutConstraint.activate([
             addButton.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 8),
@@ -68,20 +68,20 @@ extension OverviewNavBar {
         ])
     }
     
-    override func configureViews() {
-        super.configureViews()
+    override func configureAppearance() {
+        super.configureAppearance()
         backgroundColor = .white
         
        // titleLabel.translatesAutoresizingMaskIntoConstraints = false
-        titleLabel.text = Resources.Strings.NavBar.overview
-        titleLabel.textColor = Resources.Color.titleGray
-        titleLabel.font = Resources.Fonts.helvelticaRegular(with: 22)
+        titleLabel.text = R.Strings.NavBar.overview
+        titleLabel.textColor = R.Color.titleGray
+        titleLabel.font = R.Fonts.helvelticaRegular(with: 22)
         
        // allWorkoutsButton.translatesAutoresizingMaskIntoConstraints = false
-        allWorkoutsButton.setTitle(Resources.Strings.Overview.allWorkoutsButton)
+        allWorkoutsButton.setTitle(R.Strings.Overview.allWorkoutsButton)
         
        // addButton.translatesAutoresizingMaskIntoConstraints = false
-        addButton.setImage (Resources.Images.Common.add, for: .normal)
+        addButton.setImage (R.Images.Common.add, for: .normal)
         
     }
 }

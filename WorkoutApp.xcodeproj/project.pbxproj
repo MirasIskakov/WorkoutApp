@@ -26,7 +26,7 @@
 		D8F402C02AF7C7C8003256A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8F402BE2AF7C7C8003256A9 /* LaunchScreen.storyboard */; };
 		D8F402CA2AF7D1DF003256A9 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F402C92AF7D1DF003256A9 /* TabBarController.swift */; };
 		D8F402CD2AF7D3E5003256A9 /* UIColor + ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F402CC2AF7D3E5003256A9 /* UIColor + ext.swift */; };
-		D8F402D12AF7D5AC003256A9 /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F402D02AF7D5AC003256A9 /* Resources.swift */; };
+		D8F402D12AF7D5AC003256A9 /* Resouces.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F402D02AF7D5AC003256A9 /* Resouces.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,7 +51,7 @@
 		D8F402C12AF7C7C8003256A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D8F402C92AF7D1DF003256A9 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		D8F402CC2AF7D3E5003256A9 /* UIColor + ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + ext.swift"; sourceTree = "<group>"; };
-		D8F402D02AF7D5AC003256A9 /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
+		D8F402D02AF7D5AC003256A9 /* Resouces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resouces.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,7 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				D8F402CE2AF7D543003256A9 /* Extension */,
-				D8F402D02AF7D5AC003256A9 /* Resources.swift */,
+				D8F402D02AF7D5AC003256A9 /* Resouces.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -287,7 +287,7 @@
 				D85145292B17B1C50028C903 /* SessionController.swift in Sources */,
 				D851452B2B17B1DD0028C903 /* ProgressController.swift in Sources */,
 				D8E3F5512B09346E00F05F56 /* NavBarController.swift in Sources */,
-				D8F402D12AF7D5AC003256A9 /* Resources.swift in Sources */,
+				D8F402D12AF7D5AC003256A9 /* Resouces.swift in Sources */,
 				D8F402CD2AF7D3E5003256A9 /* UIColor + ext.swift in Sources */,
 				D89D36E22B1E53CC006CB564 /* BaseView.swift in Sources */,
 				D809244D2B2B7DCA002B55E2 /* WeekdayView.swift in Sources */,

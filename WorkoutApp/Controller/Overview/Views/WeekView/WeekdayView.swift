@@ -22,20 +22,20 @@ extension WeekView {
             
             let isToday = currentDay.stripTime() == Date().stripTime()
             
-            backgroundColor = isToday ? Resources.Color.active : Resources.Color.background
+            backgroundColor = isToday ? R.Color.active : R.Color.background
             
             nameLabel.text = name.uppercased()
-            nameLabel.textColor = isToday ? .white : Resources.Color.inActive
+            nameLabel.textColor = isToday ? .white : R.Color.inActive
             
             dateLabel.text = "\(day)"
-            dateLabel.textColor = isToday ? .white : Resources.Color.inActive
+            dateLabel.textColor = isToday ? .white : R.Color.inActive
         }
     }
 }
 extension WeekView.WeekdayView {
     
-    override func addViews() {
-        super.addViews()
+    override func setupViews() {
+        super.setupViews()
         
         addView(stackView)
         
@@ -43,8 +43,8 @@ extension WeekView.WeekdayView {
         stackView.addArrangedSubview(dateLabel)
     }
     
-    override func layoutViews() {
-        super.layoutViews()
+    override func constraintViews() {
+        super.constraintViews()
         
         NSLayoutConstraint.activate([
             stackView.centerXAnchor.constraint(equalTo: centerXAnchor),
@@ -53,16 +53,16 @@ extension WeekView.WeekdayView {
         ])
     }
     
-    override func configureViews() {
-        super.configureViews()
+    override func configureAppearance() {
+        super.configureAppearance()
         
         layer.cornerRadius = 5
         layer.masksToBounds = true
         
-        nameLabel.font = Resources.Fonts.helvelticaRegular(with: 9)
+        nameLabel.font = R.Fonts.helvelticaRegular(with: 9)
         nameLabel.textAlignment = .center
         
-        dateLabel.font = Resources.Fonts.helvelticaRegular(with: 15)
+        dateLabel.font = R.Fonts.helvelticaRegular(with: 15)
         dateLabel.textAlignment = .center
         
         stackView.spacing = 3

@@ -50,17 +50,17 @@ private extension SecondaryBatton {
    
     func configure() {
         
-        backgroundColor = Resources.Color.secondary
+        backgroundColor = R.Color.secondary
         layer.cornerRadius = 14
         makeSystem(self)
         
        // lable.translatesAutoresizingMaskIntoConstraints = false
-        lable.textColor = Resources.Color.active
+        lable.textColor = R.Color.active
         lable.textAlignment = .center
-        lable.font = Resources.Fonts.helvelticaRegular(with: 15)
+        lable.font = R.Fonts.helvelticaRegular(with: 15)
         
        // iconView.translatesAutoresizingMaskIntoConstraints = false
-        iconView.image = Resources.Images.Common.downArrow?.withRenderingMode(.alwaysTemplate)
-        iconView.tintColor = Resources.Color.active
+        iconView.image = R.Images.Common.downArrow?.withRenderingMode(.alwaysTemplate)
+        iconView.tintColor = R.Color.active
 }
 }
