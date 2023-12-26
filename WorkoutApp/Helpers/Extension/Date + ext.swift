@@ -21,6 +21,11 @@ extension Date {
     func agoForward(to days: Int) -> Date {
         return calendar.date(byAdding: .day, value: days, to: self) ?? self
     }
+    
+    func stripTime() -> Date {
+        let components = calendar.dateComponents([.year, .month, .day], from: self)
+        return calendar.date(from: components) ?? self
+    }
 }
 
 
