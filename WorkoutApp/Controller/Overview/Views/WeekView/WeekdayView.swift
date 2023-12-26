@@ -20,8 +20,15 @@ extension WeekView {
             let currentDay = startOfWeek.agoForward(to: index)
             let day = Calendar.current.component(.day, from: currentDay)
             
+            let isToday = currentDay.stripTime() == Date().stripTime()
+            
+            backgroundColor = isToday ? Resources.Color.active : Resources.Color.background
+            
             nameLabel.text = name.uppercased()
+            nameLabel.textColor = isToday ? .white : Resources.Color.inActive
+            
             dateLabel.text = "\(day)"
+            dateLabel.textColor = isToday ? .white : Resources.Color.inActive
         }
     }
 }
