@@ -31,8 +31,8 @@ final class SecondaryBatton: UIButton {
 
 private extension SecondaryBatton {
     func addViews() {
-        addView(lable)
-        addView(iconView)
+        setupView(lable)
+        setupView(iconView)
     }
     
     func layoutViews() {

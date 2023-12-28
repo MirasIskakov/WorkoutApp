@@ -14,6 +14,7 @@
 		D85145292B17B1C50028C903 /* SessionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85145282B17B1C50028C903 /* SessionController.swift */; };
 		D851452B2B17B1DD0028C903 /* ProgressController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D851452A2B17B1DD0028C903 /* ProgressController.swift */; };
 		D851452D2B17B1F90028C903 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D851452C2B17B1F90028C903 /* SettingsController.swift */; };
+		D86452A12B3D44FC00299033 /* BaseInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86452A02B3D44FC00299033 /* BaseInfoView.swift */; };
 		D892202F2B36F9B400DE8847 /* Date + ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D892202E2B36F9B400DE8847 /* Date + ext.swift */; };
 		D89D36E02B1E5362006CB564 /* OverviewNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89D36DF2B1E5362006CB564 /* OverviewNavBar.swift */; };
 		D89D36E22B1E53CC006CB564 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89D36E12B1E53CC006CB564 /* BaseView.swift */; };
@@ -37,6 +38,7 @@
 		D85145282B17B1C50028C903 /* SessionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionController.swift; sourceTree = "<group>"; };
 		D851452A2B17B1DD0028C903 /* ProgressController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressController.swift; sourceTree = "<group>"; };
 		D851452C2B17B1F90028C903 /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
+		D86452A02B3D44FC00299033 /* BaseInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseInfoView.swift; sourceTree = "<group>"; };
 		D892202E2B36F9B400DE8847 /* Date + ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date + ext.swift"; sourceTree = "<group>"; };
 		D89D36DF2B1E5362006CB564 /* OverviewNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewNavBar.swift; sourceTree = "<group>"; };
 		D89D36E12B1E53CC006CB564 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 				D8E3F5502B09346E00F05F56 /* NavBarController.swift */,
 				D851451F2B17A5880028C903 /* BaseController.swift */,
 				D89D36E12B1E53CC006CB564 /* BaseView.swift */,
+				D86452A02B3D44FC00299033 /* BaseInfoView.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -284,6 +287,7 @@
 				D85145222B17A8030028C903 /* UIView + ext.swift in Sources */,
 				D8F402CA2AF7D1DF003256A9 /* TabBarController.swift in Sources */,
 				D8F402B42AF7C7C7003256A9 /* AppDelegate.swift in Sources */,
+				D86452A12B3D44FC00299033 /* BaseInfoView.swift in Sources */,
 				D85145292B17B1C50028C903 /* SessionController.swift in Sources */,
 				D851452B2B17B1DD0028C903 /* ProgressController.swift in Sources */,
 				D8E3F5512B09346E00F05F56 /* NavBarController.swift in Sources */,
