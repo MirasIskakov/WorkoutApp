@@ -13,7 +13,6 @@ final class BaseInfoView: BaseView {
         let label = UILabel()
         label.font = R.Fonts.helvelticaRegular(with: 13)
         label.textColor = R.Color.inActive
-        label.text = "Пуск"
         return label
     }()
     
@@ -25,6 +24,17 @@ final class BaseInfoView: BaseView {
         view.layer.cornerRadius = 5
         return view
     }()
+    
+    init(with title: String? = nil, aligment: NSTextAlignment = .left) {
+        super.init(frame: .zero)
+        
+        titleLabel.text = title?.uppercased()
+        titleLabel.textAlignment = aligment
+    }
+    
+    required init?(coder: NSCoder) {
+        super.init(frame: .zero)
+    }
     
 }
 
