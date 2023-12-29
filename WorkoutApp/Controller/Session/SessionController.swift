@@ -10,7 +10,7 @@ import UIKit
 class SessionController: BaseController {
 
     private let timerView: BaseInfoView = {
-        let view = BaseInfoView(with: "test", aligment: .center)
+        let view = BaseInfoView(with: "test", buttonTitle: "button")
         return view
     }()
     override func viewDidLoad() {
