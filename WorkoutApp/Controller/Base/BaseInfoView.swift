@@ -26,10 +26,10 @@ final class BaseInfoView: BaseView {
     }()
     
     init(with title: String? = nil, aligment: NSTextAlignment = .left) {
-        super.init(frame: .zero)
         
         titleLabel.text = title?.uppercased()
         titleLabel.textAlignment = aligment
+        super.init(frame: .zero)
     }
     
     required init?(coder: NSCoder) {
@@ -49,12 +49,15 @@ extension BaseInfoView {
     override func constraintViews() {
         super.constraintViews()
         
+        let titleTopAnchor: NSLayoutAnchor = titleLabel.text == nil ? topAnchor : titleLabel.bottomAnchor
+        let titleOffset: CGFloat = titleLabel.text == nil ? 0 : 10
+        
         NSLayoutConstraint.activate([
             titleLabel.leadingAnchor.constraint(equalTo: leadingAnchor),
             titleLabel.topAnchor.constraint(equalTo: topAnchor),
             titleLabel.trailingAnchor.constraint(equalTo: trailingAnchor),
             
-            contentView.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 10),
+            contentView.topAnchor.constraint(equalTo: titleTopAnchor, constant: titleOffset),
             contentView.leadingAnchor.constraint(equalTo: leadingAnchor),
             contentView.bottomAnchor.constraint(equalTo: bottomAnchor),
             contentView.trailingAnchor.constraint(equalTo: trailingAnchor)
